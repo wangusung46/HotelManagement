@@ -1,0 +1,11 @@
+
+
+VivoBook = Rp.9500000
+ZenBook = Rp.8500000
+ROG = Rp.18000000
+TUF = Rp.16500000
+VivoBook = Rp.9500000
+ZenBook = Rp.8500000
+ROG = Rp.18000000
+TUF = Rp.16500000
+Jumlah = Rp.52500000

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dreamteamproject.controller.MENUcheckoutController">
+   <children>
+      <AnchorPane layoutX="151.0" prefHeight="400.0" prefWidth="449.0" style="-fx-background-color: AFDEFF;">
+         <children>
+            <AnchorPane layoutX="28.0" layoutY="26.0" prefHeight="309.0" prefWidth="392.0" style="-fx-background-color: FEF0A4; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-width: 3px 3px 3px 3px; -fx-border-color: black;">
+               <children>
+                  <Text layoutX="199.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product :" x="-192.0" y="40.0">
+                     <font>
+                        <Font name="Prompt Bold Bold Italic" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="199.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Price :" x="-192.0" y="40.0">
+                     <font>
+                        <Font name="Prompt Bold Bold Italic" size="12.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="username" alignment="TOP_CENTER" layoutX="129.0" layoutY="14.0" prefHeight="26.0" prefWidth="135.0" promptText="username" style="-fx-background-color: FEF0A4; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-width: 2px 2px 2px 2px; -fx-border-color: black;">
+                     <font>
+                        <Font name="Prompt Bold Bold Italic" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="print" layoutX="324.0" layoutY="272.0" mnemonicParsing="false" onAction="#userPrint" prefHeight="33.0" prefWidth="62.0" style="-fx-background-color: #93c032#93c032 #93c032; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-width: 3px 3px 3px 3px; -fx-border-color: black;" text="PRINT">
+                     <font>
+                        <Font name="Prompt Bold Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <ScrollPane layoutX="7.0" layoutY="83.0" prefHeight="135.0" prefWidth="377.0" style="-fx-background-color: black; -fx-border-color: FEF0A4; -fx-border-width: 4px 4px 4px 4px;">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="185.0" prefWidth="360.0" style="-fx-background-color: FEF0A4 FEF0A4;" />
+                    </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="151.0" style="-fx-background-color: FF914D;">
+         <children>
+            <Button layoutX="24.0" layoutY="120.0" mnemonicParsing="false" onAction="#userAsus" prefHeight="19.0" prefWidth="103.0" style="-fx-background-color: FEF0A4 FEF0A4; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-width: 3px 3px 3px 3px; -fx-border-color: black;" text="ASUS">
+               <font>
+                  <Font name="Prompt Bold Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="147.0" fitWidth="147.0" layoutX="2.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/Checkout/DreamTeam.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="24.0" layoutY="157.0" mnemonicParsing="false" onAction="#userAcer" prefHeight="19.0" prefWidth="103.0" style="-fx-background-color: FEF0A4; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-width: 3px 3px 3px 3px; -fx-border-color: black;" text="ACER">
+               <font>
+                  <Font name="Prompt Bold Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="24.0" layoutY="194.0" mnemonicParsing="false" onAction="#userApple" prefHeight="19.0" prefWidth="103.0" style="-fx-background-color: FEF0A4 FEF0A4; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-width: 3px 3px 3px 3px; -fx-border-color: black;" text="APPLE">
+               <font>
+                  <Font name="Prompt Bold Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="24.0" layoutY="231.0" mnemonicParsing="false" onAction="#userLenovo" prefHeight="19.0" prefWidth="103.0" style="-fx-background-color: FEF0A4; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-width: 3px 3px 3px 3px; -fx-border-color: black;" text="LENOVO">
+               <font>
+                  <Font name="Prompt Bold Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="31.0" layoutY="274.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="88.0" style="-fx-background-color: FFD700; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-width: 3px 3px 3px 3px; -fx-border-color: black;" text="CHECKOUT">
+               <font>
+                  <Font name="Prompt Bold Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="39.0" layoutY="316.0" mnemonicParsing="false" onAction="#userLogOut" prefHeight="23.0" prefWidth="73.0" style="-fx-background-color: #FF5C5C; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-width: 3px 3px 3px 3px; -fx-border-color: black;" text="LOGOUT">
+               <font>
+                  <Font name="Prompt Bold Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="356.0" prefHeight="44.0" prefWidth="600.0" style="-fx-background-color: FEF0A4;">
+         <children>
+            <Text fill="#095890" layoutX="216.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© Dream Team 2021">
+               <font>
+                  <Font name="Prompt-ExtraBold" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

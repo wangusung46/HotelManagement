@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dreamteamproject.controller.MENUloginController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: FF914D;">
+         <children>
+            <ImageView fitHeight="305.0" fitWidth="305.0" layoutX="-3.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/Login/DreamTeam.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="300.0" onDragDetected="#userLogIn" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #095890;">
+         <children>
+            <TextField fx:id="username" alignment="TOP_CENTER" layoutX="50.0" layoutY="127.0" prefHeight="27.0" prefWidth="206.0" promptText="full name" style="-fx-background-color: FEF0A4; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-width: 2px 2px 2px 2px; -fx-border-color: black;">
+               <font>
+                  <Font name="Prompt Bold Bold Italic" size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="debitcard" alignment="TOP_CENTER" layoutX="52.0" layoutY="188.0" prefHeight="27.0" prefWidth="206.0" promptText="debit card number" style="-fx-background-color: FEF0A4; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-width: 2px 2px 2px 2px; -fx-border-color: black;">
+               <font>
+                  <Font name="Prompt Bold Bold Italic" size="15.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="wrongLogIn" alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="53.0" prefHeight="25.0" prefWidth="226.0" textAlignment="CENTER" textFill="#e40c0c">
+               <font>
+                  <Font name="Prompt-SemiBold" size="14.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="356.0" prefHeight="44.0" prefWidth="600.0" style="-fx-background-color: FEF0A4;">
+         <children>
+            <Text fill="#095890" layoutX="216.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© Dream Team 2021">
+               <font>
+                  <Font name="Prompt-ExtraBold" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="button" layoutX="391.0" layoutY="275.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="29.0" prefWidth="118.0" style="-fx-background-color: FEF0A4; -fx-border-color: black; -fx-background-radius: 20px; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20px;" text="selanjutnya">
+         <font>
+            <Font name="Prompt Bold Bold Italic" size="11.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="486.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/Login/Polygon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
