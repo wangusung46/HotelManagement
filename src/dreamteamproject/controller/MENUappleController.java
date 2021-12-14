@@ -37,18 +37,10 @@ public class MENUappleController {
         leptop2 = new BaseLeptop();
         leptop3 = new BaseLeptop();
         leptop4 = new BaseLeptop();
-        leptop1.setNama("VivoBook");
-        leptop2.setNama("ZenBook");
-        leptop3.setNama("ROG");
-        leptop4.setNama("TUF");
-        leptop1.setHarga(0);
-        leptop2.setHarga(0);
-        leptop3.setHarga(0);
-        leptop4.setHarga(0);
-        leptop1.setJumlah(0);
-        leptop2.setJumlah(0);
-        leptop3.setJumlah(0);
-        leptop4.setJumlah(0);
+        leptop1.setNama("Macbook Air");
+        leptop2.setNama("Macbook Pro");
+        leptop3.setNama("iMac");
+        leptop4.setNama("Mac Pro");
         Apple.setLeptop1(leptop1);
         Apple.setLeptop2(leptop2);
         Apple.setLeptop3(leptop3);
@@ -89,8 +81,8 @@ public class MENUappleController {
         int num = Integer.parseInt(counterzenbook.getText());
         counterzenbook.setText(Integer.toString(num + 1));
 
-        leptop1.setHarga(leptop1.getHarga() + 9500000);
-        leptop1.setJumlah(num);
+        leptop1.setHarga(leptop1.getHarga() + 11250000);
+        leptop1.setJumlah(Integer.parseInt(counterzenbook.getText()));
 
         Apple.setLeptop1(leptop1);
     }
@@ -99,8 +91,8 @@ public class MENUappleController {
         int num = Integer.parseInt(counterzenbook.getText());
         counterzenbook.setText(Integer.toString(num - 1));
 
-        leptop1.setHarga(leptop1.getHarga() - 9500000);
-        leptop1.setJumlah(num);
+        leptop1.setHarga(leptop1.getHarga() - 11250000);
+        leptop1.setJumlah(Integer.parseInt(counterzenbook.getText()));
 
         Apple.setLeptop1(leptop1);
 
@@ -110,8 +102,8 @@ public class MENUappleController {
         int num = Integer.parseInt(countervivobook.getText());
         countervivobook.setText(Integer.toString(num + 1));
 
-        leptop2.setHarga(leptop2.getHarga() + 8500000);
-        leptop2.setJumlah(num);
+        leptop2.setHarga(leptop2.getHarga() + 16600000);
+        leptop2.setJumlah(Integer.parseInt(countervivobook.getText()));
 
         Apple.setLeptop2(leptop2);
     }
@@ -120,8 +112,8 @@ public class MENUappleController {
         int num = Integer.parseInt(countervivobook.getText());
         countervivobook.setText(Integer.toString(num - 1));
 
-        leptop2.setHarga(leptop2.getHarga() - 8500000);
-        leptop2.setJumlah(num);
+        leptop2.setHarga(leptop2.getHarga() - 16600000);
+        leptop2.setJumlah(Integer.parseInt(countervivobook.getText()));
 
         Apple.setLeptop2(leptop2);
     }
@@ -130,8 +122,8 @@ public class MENUappleController {
         int num = Integer.parseInt(counterrog.getText());
         counterrog.setText(Integer.toString(num + 1));
 
-        leptop3.setHarga(leptop3.getHarga() + 18000000);
-        leptop3.setJumlah(num);
+        leptop3.setHarga(leptop3.getHarga() + 29000000);
+        leptop3.setJumlah(Integer.parseInt(counterrog.getText()));
 
         Apple.setLeptop3(leptop3);
     }
@@ -140,8 +132,8 @@ public class MENUappleController {
         int num = Integer.parseInt(counterrog.getText());
         counterrog.setText(Integer.toString(num - 1));
 
-        leptop3.setHarga(leptop3.getHarga() - 18000000);
-        leptop3.setJumlah(num);
+        leptop3.setHarga(leptop3.getHarga() - 29000000);
+        leptop3.setJumlah(Integer.parseInt(counterrog.getText()));
 
         Apple.setLeptop3(leptop3);
 
@@ -151,8 +143,8 @@ public class MENUappleController {
         int num = Integer.parseInt(countertuf.getText());
         countertuf.setText(Integer.toString(num + 1));
 
-        leptop4.setHarga(leptop4.getHarga() + 16500000);
-        leptop4.setJumlah(num);
+        leptop4.setHarga(leptop4.getHarga() + 48000000);
+        leptop4.setJumlah(Integer.parseInt(countertuf.getText()));
 
         Apple.setLeptop4(leptop4);
     }
@@ -161,8 +153,8 @@ public class MENUappleController {
         int num = Integer.parseInt(countertuf.getText());
         countertuf.setText(Integer.toString(num - 1));
 
-        leptop4.setHarga(leptop4.getHarga() - 16500000);
-        leptop4.setJumlah(num);
+        leptop4.setHarga(leptop4.getHarga() - 48000000);
+        leptop4.setJumlah(Integer.parseInt(countertuf.getText()));
 
         Apple.setLeptop4(leptop4);
     }

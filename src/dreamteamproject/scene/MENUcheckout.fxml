@@ -35,11 +35,11 @@
                         <Font name="Prompt Bold Bold Italic" size="12.0" />
                      </font>
                   </Button>
-                  <ScrollPane layoutX="7.0" layoutY="83.0" prefHeight="135.0" prefWidth="377.0" style="-fx-background-color: black; -fx-border-color: FEF0A4; -fx-border-width: 4px 4px 4px 4px;">
-                    <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="185.0" prefWidth="360.0" style="-fx-background-color: FEF0A4 FEF0A4;" />
-                    </content>
-                  </ScrollPane>
+                  <TextField fx:id="report" alignment="TOP_CENTER" layoutX="129.0" layoutY="100.0" prefHeight="26.0" prefWidth="135.0" style="-fx-background-color: FEF0A4; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-width: 2px 2px 2px 2px; -fx-border-color: black;">
+                     <font>
+                        <Font name="Prompt Bold Bold Italic" size="15.0" />
+                     </font>
+                  </TextField>
                </children>
             </AnchorPane>
          </children>

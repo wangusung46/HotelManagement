@@ -16,8 +16,12 @@ import javafx.scene.control.TextField;
 
 public class MENUloginController {
 
-    public MENUloginController() {
-
+    @FXML
+    public void initialize() {
+        new MENUacerController();
+        new MENUappleController();
+        new MENUasusController();
+        new MENUlenovoController();
     }
 
     @FXML
@@ -29,8 +33,6 @@ public class MENUloginController {
     @FXML
     private PasswordField debitcard;
 
-
-
     public void userLogIn(ActionEvent event) throws IOException {
         checkLogin();
 
@@ -38,21 +40,15 @@ public class MENUloginController {
 
     private void checkLogin() throws IOException {
         Main m = new Main();
-        if(username.getText().toString().equals("0") && debitcard.getText().toString().equals("0")) {
+        if (username.getText().toString().equals("0") && debitcard.getText().toString().equals("0")) {
             wrongLogIn.setText("Success!");
 
             m.changeScene("scene/MENUasus.fxml");
-        }
-
-        else if(username.getText().isEmpty() && debitcard.getText().isEmpty()) {
+        } else if (username.getText().isEmpty() && debitcard.getText().isEmpty()) {
             wrongLogIn.setText("Please enter your data !");
-        }
-
-
-        else {
+        } else {
             wrongLogIn.setText("Wrong fullname or debitcard !");
         }
     }
-
 
 }

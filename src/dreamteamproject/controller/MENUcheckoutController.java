@@ -21,7 +21,8 @@ import javafx.scene.control.TextField;
  *
  * @author stevejobs
  */
-public class MENUcheckoutController {
+public class MENUcheckoutController extends javax.swing.JFrame {
+
     @FXML
     private Label counterzenbook;
     @FXML
@@ -32,6 +33,17 @@ public class MENUcheckoutController {
     private Label countertuf;
     @FXML
     private TextField username;
+    @FXML
+    private TextField report;
+    
+    private Integer jumlah;
+
+    @FXML
+    public void initialize() {
+        report.setEditable(false);
+        jumlah = Asus.getJumlah() + Acer.getJumlah() + Apple.getJumlah() + Lenovo.getJumlah();
+        report.setText("Rp." + jumlah.toString());
+    }
 
     public void userLogOut(ActionEvent event) throws IOException {
         Main m = new Main();
@@ -63,7 +75,6 @@ public class MENUcheckoutController {
 
     }
 
-
     public void pluslaptop(ActionEvent e) {
         int num = Integer.parseInt(counterzenbook.getText());
         counterzenbook.setText(Integer.toString(num + 1));
@@ -75,7 +86,6 @@ public class MENUcheckoutController {
 
     }
 
-
     public void pluslaptop2(ActionEvent b) {
         int num = Integer.parseInt(countervivobook.getText());
         countervivobook.setText(Integer.toString(num + 1));
@@ -85,7 +95,6 @@ public class MENUcheckoutController {
         int num = Integer.parseInt(countervivobook.getText());
         countervivobook.setText(Integer.toString(num - 1));
     }
-
 
     public void pluslaptop3(ActionEvent c) {
         int num = Integer.parseInt(counterrog.getText());
@@ -98,7 +107,6 @@ public class MENUcheckoutController {
 
     }
 
-
     public void pluslaptop4(ActionEvent d) {
         int num = Integer.parseInt(countertuf.getText());
         countertuf.setText(Integer.toString(num + 1));
@@ -109,7 +117,6 @@ public class MENUcheckoutController {
         countertuf.setText(Integer.toString(num - 1));
     }
 
-
     public void userPrint(ActionEvent d) {
         try (FileWriter myWriter = new FileWriter("Report.txt")) {
             myWriter.write(username.getText() + "\n\n");
@@ -118,25 +125,24 @@ public class MENUcheckoutController {
             myWriter.write(Asus.getLeptop2().getNama() + " = Rp." + Asus.getLeptop2().getHarga() + "\n");
             myWriter.write(Asus.getLeptop3().getNama() + " = Rp." + Asus.getLeptop3().getHarga() + "\n");
             myWriter.write(Asus.getLeptop4().getNama() + " = Rp." + Asus.getLeptop4().getHarga() + "\n");
-            
+
             myWriter.write(Acer.getLeptop1().getNama() + " = Rp." + Acer.getLeptop1().getHarga() + "\n");
             myWriter.write(Acer.getLeptop2().getNama() + " = Rp." + Acer.getLeptop2().getHarga() + "\n");
             myWriter.write(Acer.getLeptop3().getNama() + " = Rp." + Acer.getLeptop3().getHarga() + "\n");
             myWriter.write(Acer.getLeptop4().getNama() + " = Rp." + Acer.getLeptop4().getHarga() + "\n");
-            
+
             myWriter.write(Apple.getLeptop1().getNama() + " = Rp." + Apple.getLeptop1().getHarga() + "\n");
             myWriter.write(Apple.getLeptop2().getNama() + " = Rp." + Apple.getLeptop2().getHarga() + "\n");
             myWriter.write(Apple.getLeptop3().getNama() + " = Rp." + Apple.getLeptop3().getHarga() + "\n");
             myWriter.write(Apple.getLeptop4().getNama() + " = Rp." + Apple.getLeptop4().getHarga() + "\n");
-            
+
             myWriter.write(Lenovo.getLeptop1().getNama() + " = Rp." + Lenovo.getLeptop1().getHarga() + "\n");
             myWriter.write(Lenovo.getLeptop2().getNama() + " = Rp." + Lenovo.getLeptop2().getHarga() + "\n");
             myWriter.write(Lenovo.getLeptop3().getNama() + " = Rp." + Lenovo.getLeptop3().getHarga() + "\n");
             myWriter.write(Lenovo.getLeptop4().getNama() + " = Rp." + Lenovo.getLeptop4().getHarga() + "\n");
-            
-            
-            myWriter.write("\nJumlah = Rp." + Asus.getJumlah() + Acer.getJumlah() + Apple.getJumlah() + Lenovo.getJumlah() + Asus.getJumlah() + "\n");
-            
+
+            myWriter.write("\nJumlah = Rp." + jumlah + "\n");
+
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {
             System.out.println("An error occurred.");

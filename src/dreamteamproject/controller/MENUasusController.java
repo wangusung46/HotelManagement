@@ -12,7 +12,6 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.text.Text;
 
 /**
  *
@@ -42,14 +41,6 @@ public class MENUasusController {
         leptop2.setNama("ZenBook");
         leptop3.setNama("ROG");
         leptop4.setNama("TUF");
-        leptop1.setHarga(0);
-        leptop2.setHarga(0);
-        leptop3.setHarga(0);
-        leptop4.setHarga(0);
-        leptop1.setJumlah(0);
-        leptop2.setJumlah(0);
-        leptop3.setJumlah(0);
-        leptop4.setJumlah(0);
         Asus.setLeptop1(leptop1);
         Asus.setLeptop2(leptop2);
         Asus.setLeptop3(leptop3);
@@ -91,7 +82,7 @@ public class MENUasusController {
         counterzenbook.setText(Integer.toString(num + 1));
 
         leptop1.setHarga(leptop1.getHarga() + 9500000);
-        leptop1.setJumlah(num);
+        leptop1.setJumlah(Integer.parseInt(counterzenbook.getText()));
 
         Asus.setLeptop1(leptop1);
     }
@@ -101,7 +92,7 @@ public class MENUasusController {
         counterzenbook.setText(Integer.toString(num - 1));
 
         leptop1.setHarga(leptop1.getHarga() - 9500000);
-        leptop1.setJumlah(num);
+        leptop1.setJumlah(Integer.parseInt(counterzenbook.getText()));
 
         Asus.setLeptop1(leptop1);
 
@@ -112,7 +103,7 @@ public class MENUasusController {
         countervivobook.setText(Integer.toString(num + 1));
 
         leptop2.setHarga(leptop2.getHarga() + 8500000);
-        leptop2.setJumlah(num);
+        leptop2.setJumlah(Integer.parseInt(counterzenbook.getText()));
 
         Asus.setLeptop2(leptop2);
     }
@@ -122,7 +113,7 @@ public class MENUasusController {
         countervivobook.setText(Integer.toString(num - 1));
 
         leptop2.setHarga(leptop2.getHarga() - 8500000);
-        leptop2.setJumlah(num);
+        leptop2.setJumlah(Integer.parseInt(counterzenbook.getText()));
 
         Asus.setLeptop2(leptop2);
     }
@@ -132,7 +123,7 @@ public class MENUasusController {
         counterrog.setText(Integer.toString(num + 1));
 
         leptop3.setHarga(leptop3.getHarga() + 18000000);
-        leptop3.setJumlah(num);
+        leptop3.setJumlah(Integer.parseInt(counterzenbook.getText()));
 
         Asus.setLeptop3(leptop3);
     }
@@ -142,7 +133,7 @@ public class MENUasusController {
         counterrog.setText(Integer.toString(num - 1));
 
         leptop3.setHarga(leptop3.getHarga() - 18000000);
-        leptop3.setJumlah(num);
+        leptop3.setJumlah(Integer.parseInt(counterzenbook.getText()));
 
         Asus.setLeptop3(leptop3);
 
@@ -153,7 +144,7 @@ public class MENUasusController {
         countertuf.setText(Integer.toString(num + 1));
 
         leptop4.setHarga(leptop4.getHarga() + 16500000);
-        leptop4.setJumlah(num);
+        leptop4.setJumlah(Integer.parseInt(counterzenbook.getText()));
 
         Asus.setLeptop4(leptop4);
     }
@@ -163,7 +154,7 @@ public class MENUasusController {
         countertuf.setText(Integer.toString(num - 1));
 
         leptop4.setHarga(leptop4.getHarga() - 16500000);
-        leptop4.setJumlah(num);
+        leptop4.setJumlah(Integer.parseInt(counterzenbook.getText()));
 
         Asus.setLeptop4(leptop4);
     }

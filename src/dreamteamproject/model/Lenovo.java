@@ -10,7 +10,7 @@ public class Lenovo {
     private static BaseLeptop leptop2;
     private static BaseLeptop leptop3;
     private static BaseLeptop leptop4;
-    private static Integer jumlah;
+    private static Integer jumlah = 0;
     
     public static Integer getJumlah() {
         jumlah = leptop1.getHarga() + leptop2.getHarga() + leptop3.getHarga() + leptop4.getHarga();
